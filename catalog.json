@@ -1,0 +1,20 @@
+[
+    {
+        "name": "Item 1",
+        "description": "Description 1",
+        "link": "https://chat.openai.com/",
+        "image": "https://c8.alamy.com/comp/P9DECX/gold-alphabet-letter-gg-g-g-logo-combination-design-suitable-for-a-company-or-business-P9DECX.jpg"
+    },
+    {
+        "name": "Item 2",
+        "description": "Description 2",
+        "link": "https://example.com/item2",
+        "image": "https://example.com/images/item2.jpg"
+    },
+    {
+        "name": "Item 3",
+        "description": "Description 3",
+        "link": "https://example.com/item3",
+        "image": "https://example.com/images/item3.jpg"
+    }
+]

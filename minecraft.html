@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500&display=swap">
+    <style>
+        /* Additional CSS for button styles */
+        .button {
+            display: inline-block;
+            padding: 10px 20px;
+            margin: 10px;
+            border: none;
+            border-radius: 5px;
+            font-family: "Red Hat Display", sans-serif;
+            cursor: pointer;
+            text-decoration: none; /* Remove underlines from buttons */
+            transition: transform 0.3s, box-shadow 0.3s; /* Add transition effect */
+        }
+        .red-button {
+            background-color: red;
+            color: white;
+        }
+        .green-button {
+            background-color: green;
+            color: white;
+        }
+        .orange-button {
+            background-color: orange;
+            color: white;
+        }
+        .blue-button {
+            background-color: #5865F2;
+            color: white;
+        }
+        /* 3D effect on hover */
+        .button:hover {
+            transform: translateY(-3px); /* Move the button slightly up */
+            box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.3); /* Add shadow */
+        }
+
+        /* Background image styling for minecraft.html */
+        body {
+            background-image: url('Resources/minecraftbackground.png');
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            font-family: "Red Hat Display", sans-serif;
+            color: #333;
+        }
+        
+        /* Header styles */
+        header {
+            background-color: #0b4bc1;
+            color: rgb(255, 255, 255);
+            padding: 10px 0;
+        }
+
+        /* Navigation styles */
+        nav ul {
+            list-style: none;
+            display: flex;
+            justify-content: center;
+        }
+
+        nav ul li {
+            margin: 0 20px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: white;
+        }
+
+        /* Dropdown styles */
+        .games-dropdown {
+            position: relative;
+        }
+
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: rgb(44, 101, 192);
+            border: 1px solid #ddd;
+            z-index: 1;
+            min-width: 160px;
+            box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+            padding: 10px;
+        }
+
+        .games-dropdown:hover .dropdown-content {
+            display: block;
+        }
+
+        .dropdown-content a {
+            display: block;
+            padding: 5px 10px;
+            text-decoration: none;
+            color: #333;
+        }
+
+        .dropdown-content a:hover {
+            background-color: #f0f0f0;
+        }
+
+        /* Main content styling */
+        main.game-details {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+            padding: 40px;
+            text-align: center;
+        }
+
+        /* Server message styling */
+        .server-message {
+        max-width: 80%; /* Adjust the maximum width to your preference */
+        margin: 20px auto;
+        font-size: 1.2rem;
+        color: #333;
+        text-align: center;
+        padding: 20px;
+        background-color: rgba(240, 240, 240, 0.5); /* Slightly transparent background */
+        border-radius: 10px;
+        }
+
+        /* Footer styling */
+        footer {
+            text-align: center;
+            padding: 10px 0;
+            background-color: #186fca;
+            color: rgb(255, 255, 255);
+        }
+
+    </style>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/buymeacoffee/1.0.0/widget.prod.min.js"></script>
+    <title>G9 Aerospace - Minecraft</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li class="games-dropdown">
+                    <a href="javascript:void(0);" disabled>Games</a>
+                    <div class="dropdown-content">
+                        <a href="minecraft.html">Minecraft</a>
+                        <a href="kerbal.html">Kerbal Space Program</a>
+                    </div>
+                </li>
+                <li><a href="forum.html">Forum</a></li>
+                <li><a href="about.html">About Me</a></li>
+                <li class="youtube-button">
+                    <a href="https://www.youtube.com/@G9AEROSPACEYT" target="_blank">
+                        <img src="Resources\youtube-icon.png" alt="YouTube Icon">
+                        <span>YouTube</span>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <main class="game-details">
+        <h1 style="font-family: 'Red Hat Display', sans-serif;">Minecraft</h1>
+        <p>Learn all about the exciting world of Minecraft.</p>
+
+        <!-- Embed the Vote widget -->
+        <a href="https://minecraftservers.org/server/649982" target="_blank">
+            <img src="https://status.minecraftservers.org/sunset/649982.png" alt="Miners Paradise Minecraft server" width="540" height="90" />
+        </a>
+
+       <!-- Server invitation message with adjusted max-width -->
+       <div class="server-message">
+        Embark on an epic adventure on our server! Dive into heart-pounding Battle Royale battles, harness the power of Lifesteal, conquer the wilds of Survival, engage in intense PVP clashes, and embrace the chaos of Anarchy. Experience it all with premium plugins for an unparalleled gaming experience. Enjoy seamless gameplay with no lag, explore an interactive online map, and uncover countless surprises. Join us today and discover a world brimming with excitement and endless possibilities!
+    </div>
+
+        <!-- Add buttons -->
+        <a href="https://www.youtube.com/@G9AEROSPACEYT" class="button red-button">YOUTUBE CHANNEL</a>
+        <a href="https://minecraftservers.org/server/649982" class="button green-button">VOTE</a>
+        <a href="https://bbn.one/hosting" class="button orange-button">Powered by BBN Hosting</a>
+        <a href="https://discord.gg/SvxTDPVbZj" class="button blue-button">Discord</a>
+         
+        <!-- Buy Me a Coffee Widget -->
+    <script data-name="BMC-Widget" data-cfasync="false" src="https://cdnjs.buymeacoffee.com/1.0.0/widget.prod.min.js" data-id="g9aerospace" data-description="Support me on Buy me a coffee!" data-message="" data-color="#5F7FFF" data-position="Right" data-x_margin="18" data-y_margin="18"></script>
+
+    </main>
+    <footer>
+        <p>&copy; 2023 G9 Aerospace. All rights reserved.</p>
+    </footer>
+</body>
+</html>

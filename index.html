@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="Resources\favicon.ico" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@400;500;700&display=swap" rel="stylesheet">
+    <title>G9 Aerospace - Home</title>
+    <style>
+        /* Reset some default styling */
+        body, h1, h2, p {
+            margin: 0;
+            padding: 0;
+            font-family: 'Red Hat Display', sans-serif;
+        }
+
+        /* Basic styling */
+        body {
+            background-color: #f0f0f0;
+            color: #333;
+        }
+
+        /* Header styles */
+        header {
+            background-color: #0b4bc14a;
+            color: rgb(255, 255, 255);
+            padding: 10px 0;
+            width: 100%; /* Set header width to 100% */
+            position: relative;
+        }
+
+        .logo {
+            position: absolute;
+            top: 10px;
+            left: 10px;
+            max-width: 100px; /* Adjust the size as needed */
+        }
+
+        /* Navigation styles */
+        nav ul {
+            list-style: none;
+            display: flex;
+            justify-content: center;
+            margin: 0;
+            padding: 0;
+        }
+
+        nav ul li {
+            margin: 0 20px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: white;
+        }
+
+        /* YouTube button */
+        .youtube-button {
+            display: flex;
+            align-items: center;
+            background-color: red;
+            color: white;
+            padding: 5px 10px;
+            border-radius: 5px;
+            font-size: 14px;
+        }
+
+        .youtube-button img {
+            max-width: 20px;
+            margin-right: 5px;
+        }
+
+        /* Discord widget positioning */
+        .discord-widget {
+            position: fixed;
+            top: 50%;
+            right: 20px;
+            transform: translateY(-50%);
+        }
+    </style>
+</head>
+    
+<body class="home-page">
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li class="games-dropdown">
+                    <a href="javascript:void(0);" disabled>Games</a>
+                    <div class="dropdown-content">
+                        <a href="minecraft.html">Minecraft</a>
+                        <a href="kerbal.html">Kerbal Space Program</a>
+                    </div>
+                </li>
+                <li><a href="forum.html">Forum</a></li>
+                <li><a href="about.html">About Me</a></li>
+                <li class="youtube-button">
+                    <a href="https://www.youtube.com/@G9AEROSPACEYT" target="_blank">
+                        <img src="Resources\youtube-icon.png" alt="YouTube Icon">
+                        <span>YouTube</span>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <img class="logo" src="Resources\g9aerospace.png" alt="G9 Aerospace Logo">
+
+    <main class="home">
+        <div class="center-content">
+            <section class="website-info">
+                <h2>About G9 Aerospace</h2>
+                <p>G9 Aerospace is a hub for gaming enthusiasts who are passionate about exploring the virtual skies and beyond. Our website offers a variety of gaming content, from Minecraft adventures to Kerbal Space Program challenges. Join our community, stay updated on the latest games, and embark on new gaming journeys with us!</p>
+            </section>
+            
+            <div class="widgets-container">
+                <!-- Discord Widget -->
+                <div class="discord-widget">
+                    <iframe src="https://discord.com/widget?id=938038378321027104&theme=dark" width="350" height="500" allowtransparency="true" frameborder="0" sandbox="allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts"></iframe>
+                </div>
+            </div>
+            
+            <!-- Buy Me a Coffee Widget -->
+            <script data-name="BMC-Widget" data-cfasync="false" src="https://cdnjs.buymeacoffee.com/1.0.0/widget.prod.min.js" data-id="g9aerospace" data-description="Support me on Buy me a coffee!" data-message="" data-color="#5F7FFF" data-position="Right" data-x_margin="18" data-y_margin="18"></script>
+        </div>
+    </main>
+    
+    <footer>
+        <div class="social-media">
+            <h2>Follow me on Social Media</h2>
+            <div class="social-icons">
+                <a href="https://www.facebook.com/gnine.militants.1" target="_blank">
+                    <img src="Resources\facebook.png" alt="Facebook">
+                </a>
+                <a href="https://twitter.com/G9Militants" target="_blank">
+                    <img src="Resources\twitter.png" alt="Twitter">
+                </a>
+                <!-- Add more social media icons as needed -->
+            </div>
+        </div>
+        
+        <p>&copy; 2023 G9 Aerospace. All rights reserved.</p>
+    </footer>
+</body>
+</html>
